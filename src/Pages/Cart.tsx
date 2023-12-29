@@ -15,7 +15,7 @@ function Cart({}: Props) {
   }, [cartItems]);
 
   return (
-    <div className="pt-10 px-6 pb-20">
+    <div className="pt-10 px-6 pb-20 max-w-2xl lg:mx-auto relative">
       <div className="flex items-center mb-3">
         <button
           onClick={() => {
@@ -42,8 +42,8 @@ function Cart({}: Props) {
                     src={item.item.image}
                     className="w-[91px] h-[91px] rounded-xl"
                   />
-                  <div className="pl-4 flex flex-col">
-                    <p className="pt-2 text-sm font-normal mb-2 flex flex-grow max-w-[216px]">
+                  <div className="pl-4 flex flex-col flex-grow">
+                    <p className="pt-2 text-sm font-normal mb-2 flex flex-grow lg:text-xl">
                       {item.item.name}
                     </p>
                     <div className="flex justify-between items-end">
