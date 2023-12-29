@@ -15,8 +15,8 @@ function Cart({}: Props) {
   }, [cartItems]);
 
   return (
-    <div className="pt-10 px-6 pb-20 max-w-2xl lg:mx-auto relative">
-      <div className="flex items-center mb-3">
+    <div className="pt-10 px-6 pb-20 max-w-2xl lg:mx-auto relative h-screen">
+      <div className="flex items-center mb-6">
         <button
           onClick={() => {
             navigate(-1);
